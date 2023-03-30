@@ -1,0 +1,26 @@
+h1  {
+    background-color: blue; 
+    color: white;
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif; font-size: 50px; font-style: normal;
+     font-variant: normal; font-weight: 700; line-height: 26.4px;
+     text-align: center;
+}
+
+p   {
+    font-family: Rockwell
+}
+
+p   {
+    text-align: center;
+}
+
+nav {
+    list-style:none;
+    text-align:center;
+    font-family: Rockwell
+}
+
+li {
+    text-align: center;
+    list-style: none;
+}
