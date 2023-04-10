@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>River's Website</title>
+	<!-- Bootstrap CSS -->
+	
+    <link rel="stylesheet" href="node_modules/bootsrap/dist/css/bootstrap.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Bootstrap Table Example</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Name</th>
+					<th>Age</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>John</td>
+					<td>25</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Jane</td>
+					<td>30</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h1>Add New Row</h1>
+		<form>
+			<div class="form-group">
+				<label for="id">ID:</label>
+				<input type="text" class="form-control" id="id">
+			</div>
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="text" class="form-control" id="name">
+			</div>
+			<div class="form-group">
+				<label for="age">Age:</label>
+				<input type="text" class="form-control" id="age">
+			</div>
+			<button type="submit" class="btn btn-primary" onclick="addRow()">Submit</button>
+		</form>
+	</div>
+
+	<!-- Bootstrap JavaScript -->
+
+    
+    <script> src="node_modules/jquery/dist/jquery.js"</script>
+	<script> src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"</script>
+	<script>
+		function addRow() {
+			var id = document.getElementById("id").value;
+			var name = document.getElementById("name").value;
+			var age = document.getElementById("age").value;
+
+			var table = document.getElementsByTagName("table")[0];
+			var newRow = table.insertRow(table.length);
+			var cell1 = newRow.insertCell(0);
+			var cell2 = newRow.insertCell(1);
+			var cell3 = newRow.insertCell(2);
+			cell1.innerHTML = id;
+			cell2.innerHTML = name;
+			cell3.innerHTML = age;
+		}
+	</script>
